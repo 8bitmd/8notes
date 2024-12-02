@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8notes</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=delete"/>
+</head>
+<body>
+<header>
+    <p class="logo">8notes</p>
+    <button id="new-note">New note</button>
+</header>
+
+<main>
+    <section id="new-note-modal" class="modal hidden">
+        <div class="modal-content">
+            <form id="new-note-form">
+                <div>
+                    <label for="new-note-title">Title</label>
+                    <input id="new-note-title" type="text" placeholder="Title">
+                </div>
+                <div>
+                    <label for="new-note-body">Body</label>
+                    <textarea id="new-note-body" placeholder="Body"></textarea>
+                </div>
+                <input type="submit" value="Save">
+            </form>
+            <button id="close-modal">Close</button>
+        </div>
+    </section>
+
+    <section id="notes">
+        <!--        handled by JS-->
+    </section>
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>
