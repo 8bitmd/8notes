@@ -28,6 +28,19 @@ header
   display: flex
   justify-content: space-between
   align-items: center
+  position: relative
+
+header::after
+  content: ""
+  display: block
+  width: 100vw
+  height: 2px
+  background-color: #f2d30c
+  position: absolute
+  left: -38px
+  bottom: 0
+  right: 0
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3)
 
 button, input[type=submit]
   height: 2em
@@ -74,6 +87,7 @@ button, input[type=submit]
   display: grid
   grid-template-columns: 1fr 1fr 1fr
   gap: 20px
+  margin-top: 40px
   @media (max-width: 720px)
     display: flex
     flex-direction: column
