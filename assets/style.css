@@ -134,9 +134,18 @@ button, input[type=submit] {
 #notes .note h1 {
   color: #f2d30c;
   text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  hyphens: auto;
 }
 #notes .note p {
   color: #f5f5f5;
+  word-break: break-word;
+  hyphens: auto;
 }
 @media (max-width: 720px) {
   #notes .note {
