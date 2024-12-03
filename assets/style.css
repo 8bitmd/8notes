@@ -116,16 +116,27 @@ button, input[type=submit] {
   top: 0;
   right: 0;
 }
+#notes .delete-note span {
+  color: orange;
+}
 #notes .note {
   padding: 15px;
-  border: 1px solid #f2d30c;
+  border: 2px solid #f2d30c;
   border-radius: 10px;
   max-height: 300px;
   text-overflow: ellipsis;
   white-space: collapse;
   overflow-y: hidden;
   position: relative;
+  background-color: #181818;
   z-index: 0;
+}
+#notes .note h1 {
+  color: #f2d30c;
+  text-align: center;
+}
+#notes .note p {
+  color: #f5f5f5;
 }
 @media (max-width: 720px) {
   #notes .note {
